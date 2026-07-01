@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #11180F;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+:root {
+
+  --bg: #11180F;
+
+  --card: rgba(255, 255, 255, .06);
+
+  --border: rgba(255, 255, 255, .12);
+
+  --text: #FFFFFF;
+
+  --text-light: #B9B9B9;
+
+  --accent: #C5D54B;
+
+  --radius: 38px;
+
+  --container: 1200px;
+
+  --transition: .35s ease;
+
+}

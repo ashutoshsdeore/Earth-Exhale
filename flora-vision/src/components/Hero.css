@@ -1,0 +1,968 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 2010px;
+    overflow: hidden;
+    background: #11180f;
+}
+
+.hero-bg {
+    position: absolute;
+
+    top: -250px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    min-width: 1540px;
+    height: auto;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+
+    background: linear-gradient(to right,
+            rgba(10, 15, 10, .95),
+            rgba(10, 15, 10, 0));
+
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+
+    background: linear-gradient(to left,
+            rgba(10, 15, 10, .95),
+            rgba(10, 15, 10, 0));
+
+    z-index: 1;
+}
+
+
+
+
+.hero-content {
+
+    position: absolute;
+
+    top: 190px;
+
+    left: 70px;
+
+    width: 1000px;
+
+    z-index: 10;
+}
+
+.hero-content h1 {
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 78px;
+
+    font-weight: 700;
+
+    line-height: .92;
+
+    color: #ECECEC;
+
+    letter-spacing: -2px;
+}
+
+.hero-content p {
+
+    width: 500px;
+
+    margin-top: 16px;
+
+    color: #D4D4D4;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    font-weight: 400;
+}
+
+.hero-buttons {
+
+    margin-top: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.buy-btn {
+
+    width: 95px;
+
+    height: 38px;
+
+    border: 1px solid rgba(255, 255, 255, .8);
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.play-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, .8);
+
+    background: transparent;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.play-btn svg {
+
+    font-size: 12px;
+
+    margin-left: 2px;
+}
+
+.hero-buttons span {
+
+    color: #F2F2F2;
+
+    font-size: 13px;
+
+    font-family: "Indie Flower", cursive;
+}
+
+
+.review-card {
+
+    position: absolute;
+
+    top: 600px;
+
+    left: 70px;
+
+    width: 300px;
+
+    padding: 22px 28px;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, .06);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, .10);
+
+    z-index: 20;
+}
+
+.review-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.review-top img {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.review-top h4 {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+.review-top small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #FFD447;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.review-card p {
+
+    margin-top: 14px;
+
+    color: #D6D6D6;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    width: 205px;
+}
+
+
+
+.floating-product {
+    position: absolute;
+
+    top: 190px;
+    right: 35px;
+
+    width: 305px;
+    height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 20;
+}
+
+
+.card-border {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+}
+
+.card-border path {
+
+    fill: rgba(18, 25, 18, .32);
+
+    stroke: rgba(255, 255, 255, .22);
+
+    stroke-width: 1.3;
+}
+
+
+.floating-plant {
+
+    position: absolute;
+
+    top: -18px;
+
+    width: 240px;
+
+    z-index: 5;
+}
+
+
+
+.product-info {
+
+    position: absolute;
+
+    top: 240px;
+
+    /* width: 78%; */
+}
+
+.product-info small {
+
+    font-size: 14px;
+
+    color: #C4C4C4;
+
+    margin-bottom: 10px;
+
+    display: block;
+}
+
+
+
+.title-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.title-row h3 {
+
+    margin: 0;
+
+    display: flex;
+
+    gap: 12px;
+
+    font-size: 20px;
+
+    color: white;
+
+    font-weight: 500;
+}
+
+.title-row h3 span {
+    font-weight: 300;
+}
+
+.arrow-right {
+
+    font-size: 24px;
+
+    color: white;
+}
+
+
+
+.buy-btn-card {
+
+    margin-top: 20px;
+
+    width: 138px;
+
+    height: 42px;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+}
+
+.buy-btn-card:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+
+.slider-dots {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .45);
+}
+
+.slider-dots .active {
+    width: 20px;
+    height: 6px;
+
+    border-radius: 20px;
+
+    background: #fff;
+}
+
+.trending-section {
+
+    position: absolute;
+
+    top: 960px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 92%;
+}
+
+.trending-title {
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.trending-title h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.product-card {
+
+    position: relative;
+
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* overflow: hidden; */
+
+    margin-bottom: 170px;
+
+    border-radius: 52px;
+
+    background: rgba(18, 22, 18, .18);
+
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .08),
+        0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.product-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    width: 180px;
+    height: 100%;
+
+    background: rgba(255, 255, 255, .12);
+
+    filter: blur(20px);
+
+    opacity: .55;
+}
+
+.card-plant {
+
+    position: absolute;
+
+    z-index: 5;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+.card-plant.left {
+
+    left: 60px;
+
+    bottom: 8px;
+
+    width: 400px;
+}
+
+.card-plant.right {
+
+    right: 150px;
+
+    bottom: 0;
+
+    width: 300px;
+}
+
+.card-content {
+
+    position: relative;
+
+    z-index: 10;
+
+    width: 380px;
+}
+
+.first-card .card-content {
+
+    margin-left: auto;
+
+    margin-right: 150px;
+}
+
+.second-card .card-content {
+
+    margin-left: 150px;
+}
+
+.card-content h2 {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.card-content p {
+
+    width: 420px;
+
+    margin: 0;
+
+    color: #d7d7d7;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.card-content h3 {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.card-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.card-buttons button {
+
+    width: 105px;
+
+    height: 38px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(255, 255, 255, .75);
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.icon-btn {
+
+    width: 38px !important;
+
+    height: 38px !important;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+@media (max-width:1024px) {
+
+    /* .hero {
+        height: 1800px;
+    } */
+
+    .hero-content {
+        left: 40px;
+        top: 150px;
+        width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+    .hero-content p {
+        width: 420px;
+    }
+
+    .floating-product {
+        right: 20px;
+        transform: scale(.9);
+        transform-origin: top right;
+    }
+
+    .review-card {
+        left: 40px;
+        top: 560px;
+        transform: scale(.9);
+        transform-origin: left top;
+    }
+
+    .trending-section {
+        top: 900px;
+        width: 94%;
+    }
+
+    .card-plant.left {
+        width: 320px;
+        left: 20px;
+    }
+
+    .card-plant.right {
+        width: 240px;
+        right: 60px;
+    }
+
+    .first-card .card-content {
+        margin-right: 80px;
+    }
+
+    .second-card .card-content {
+        margin-left: 80px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .hero {
+
+        min-height: auto;
+
+        padding-bottom: 80px;
+    }
+
+    .hero-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .hero-bg {
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        min-width: 100%;
+
+        transform: none;
+
+        object-fit: cover;
+    }
+
+    .hero-content {
+
+        position: relative;
+
+        top: auto;
+
+        left: auto;
+
+        width: 90%;
+
+        margin: 80px auto 0;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+
+        font-size: 50px;
+    }
+
+    .hero-content p {
+
+        width: 100%;
+
+        margin: auto;
+
+        margin-top: 20px;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+    .floating-product {
+
+        position: relative;
+
+        top: auto;
+
+        right: auto;
+
+        margin: 6px auto 0;
+    }
+
+    .review-card {
+
+        position: relative;
+
+        top: auto;
+
+        left: auto;
+
+        margin: 110px auto 0;
+    }
+
+    .trending-section {
+
+        position: relative;
+
+        top: auto;
+
+        left: auto;
+
+        transform: none;
+
+        width: 82%;
+
+        margin: -20px auto 0;
+    }
+
+    .product-card {
+
+        height: auto;
+
+        min-height: 520px;
+
+        padding: 30px 20px 35px;
+
+        border-radius: 30px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+    }
+
+    .card-plant {
+
+        position: relative;
+
+        width: 180px !important;
+
+        margin: 0 auto 20px;
+
+        left: auto !important;
+
+        right: auto !important;
+
+        bottom: auto;
+    }
+
+    .card-content {
+
+        width: 100%;
+
+        margin: 0 !important;
+
+        text-align: center;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .card-content h2 {
+
+        font-size: 30px;
+
+        line-height: 1.2;
+
+        margin-bottom: 18px;
+    }
+
+    .card-content p {
+
+        width: 90%;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        margin-bottom: 25px;
+    }
+
+    .card-content h3 {
+
+        font-size: 32px;
+
+        margin-bottom: 25px;
+    }
+
+    .card-buttons {
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .card-buttons button {
+
+        width: 130px;
+
+        height: 45px;
+    }
+
+    .icon-btn {
+
+        width: 45px !important;
+
+        height: 45px !important;
+    }
+}
+
+@media (max-width:480px) {
+
+    .hero-content {
+
+        top: 90px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-content p {
+
+        font-size: 13px;
+    }
+
+    .buy-btn {
+
+        width: 90px;
+
+        height: 36px;
+    }
+
+    .floating-product {
+
+        width: 260px;
+
+        height: 360px;
+
+        transform: scale(.75);
+    }
+
+    .floating-plant {
+
+        width: 180px;
+    }
+
+    .product-info {
+
+        top: 190px;
+    }
+
+    .review-card {
+
+        width: 90%;
+
+        padding: 18px;
+    }
+
+    .review-card p {
+
+        width: 100%;
+    }
+
+    .trending-title h2 {
+
+        font-size: 34px;
+    }
+
+    .product-card {
+
+        border-radius: 30px;
+
+        margin-bottom: 80px;
+    }
+
+    .card-plant {
+
+        width: 180px !important;
+    }
+
+    .card-content h2 {
+
+        font-size: 22px;
+    }
+
+    .card-content h3 {
+
+        font-size: 20px;
+    }
+
+    .card-content p {
+
+        font-size: 13px;
+    }
+
+}

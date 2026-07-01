@@ -1,0 +1,199 @@
+.top-selling {
+
+    width: 100%;
+
+    background: #182214;
+
+    padding: 120px 0 140px;
+}
+
+.top-selling-container {
+
+    width: 92%;
+
+    max-width: 1320px;
+
+    margin: auto;
+}
+
+.top-selling-title {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.top-selling-title h2 {
+
+    margin: 0;
+
+    font-size: 48px;
+
+    color: #fff;
+
+    font-weight: 700;
+}
+
+
+.top-selling-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 78px;
+}
+
+
+
+@media (max-width:1400px) {
+
+    .top-selling {
+
+        padding: 110px 0 130px;
+    }
+
+    .top-selling-container {
+
+        width: 94%;
+    }
+
+    .top-selling-grid {
+
+        gap: 60px;
+    }
+
+}
+
+
+
+
+@media (max-width:1200px) {
+
+    .top-selling {
+
+        padding: 100px 0 120px;
+    }
+
+    .top-selling-container {
+
+        width: 94%;
+    }
+
+    .top-selling-grid {
+
+        gap: 40px;
+    }
+
+}
+
+
+
+
+@media (max-width:992px) {
+
+    .top-selling {
+
+        padding: 90px 0 100px;
+    }
+
+    .top-selling-container {
+
+        width: 92%;
+    }
+
+    .top-selling-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px 28px;
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+
+    .top-selling {
+
+        padding: 80px 0;
+    }
+
+    .top-selling-container {
+
+        width: 92%;
+    }
+
+    .top-selling-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px 22px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    .top-selling {
+
+        padding: 70px 0;
+    }
+
+    .top-selling-container {
+
+        width: 90%;
+    }
+
+    .top-selling-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+
+@media (max-width:375px) {
+
+    .top-selling {
+
+        padding: 60px 0;
+    }
+
+    .top-selling-container {
+
+        width: 92%;
+    }
+
+    .top-selling-grid {
+
+        gap: 28px;
+    }
+
+}
+
+
+
+@media (max-width:320px) {
+
+    .top-selling {
+
+        padding: 50px 0;
+    }
+
+    .top-selling-container {
+
+        width: 94%;
+    }
+
+    .top-selling-grid {
+
+        gap: 24px;
+    }
+
+}

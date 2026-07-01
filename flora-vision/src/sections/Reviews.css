@@ -1,0 +1,30 @@
+.reviews {
+
+    background: #182214;
+
+    padding: 80px 0;
+
+    height: auto !important;
+
+    min-height: auto !important;
+}
+
+.reviews-container {
+
+    height: auto !important;
+
+    min-height: auto !important;
+}
+
+.reviews-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 36px;
+
+    margin-top: 40px;
+
+    align-items: start;
+}
